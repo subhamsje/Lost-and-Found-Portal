@@ -23,7 +23,11 @@ export default function App() {
 
   // Theme state for Dayananda Sagar portal
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
-    return (localStorage.getItem('dsce_theme') as 'light' | 'dark') || 'light';
+    try {
+      return (localStorage.getItem('dsce_theme') as 'light' | 'dark') || 'light';
+    } catch (e) {
+      return 'light';
+    }
   });
 
   useEffect(() => {
@@ -33,13 +37,19 @@ export default function App() {
     } else {
       root.classList.remove('dark');
     }
-    localStorage.setItem('dsce_theme', theme);
+    try {
+      localStorage.setItem('dsce_theme', theme);
+    } catch (e) {}
   }, [theme]);
 
   // Authentication session state
   const [userSession, setUserSession] = useState<{ email: string; name: string } | null>(() => {
-    const saved = localStorage.getItem('dsce_user_session');
-    return saved ? JSON.parse(saved) : null;
+    try {
+      const saved = localStorage.getItem('dsce_user_session');
+      return saved ? JSON.parse(saved) : null;
+    } catch (e) {
+      return null;
+    }
   });
   const [viewMode, setViewMode] = useState<'feed' | 'map'>('feed');
 
