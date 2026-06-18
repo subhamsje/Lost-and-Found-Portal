@@ -1,5 +1,9 @@
 <div align="center">
 
+<img src="assets/banner.svg" width="800" alt="CampusFind Banner" />
+
+<br />
+
 # 🏛️ CampusFind @ DSCE
 ### *The Definitive Lost & Found Network for Dayananda Sagar College of Engineering*
 
@@ -20,17 +24,36 @@
 
 ## 🌌 The Experience
 
-CampusFind isn't just a database; it's an interactive campus experience. 
-
-- **✨ 3D Atmospheric Interface:** A motion-rich landing page powered by React Three Fiber, creating a modern, "alive" feel from the moment you log in.
-- **📍 Interactive Map Beacons:** Visualize lost and found items directly on the DSCE campus map with live coordinate-based markers.
-- **⚡ Real-time Synchronization:** Powered by Supabase, every listing, claim, and status update is broadcasted instantly across all active sessions.
-- **🌓 Adaptive Aesthetics:** Fully realized Dark and Light modes that respect user preferences and system settings.
-- **📊 Analytics Dashboard:** Live tracking of campus return rates, active SOS requests, and successful reunions.
+<table width="100%">
+  <tr>
+    <td width="50%">
+      <h3>✨ 3D Atmospheric Interface</h3>
+      <p>A motion-rich landing page powered by <b>React Three Fiber</b>, creating a modern, "alive" feel from the moment you log in.</p>
+    </td>
+    <td width="50%">
+      <h3>📍 Interactive Map Beacons</h3>
+      <p>Visualize lost and found items directly on the <b>DSCE campus map</b> with live coordinate-based markers.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>⚡ Real-time Synchronization</h3>
+      <p>Powered by <b>Supabase</b>, every listing, claim, and status update is broadcasted instantly across all active sessions.</p>
+    </td>
+    <td width="50%">
+      <h3>🌓 Adaptive Aesthetics</h3>
+      <p>Fully realized <b>Dark and Light modes</b> that respect user preferences and system settings.</p>
+    </td>
+  </tr>
+</table>
 
 ## 🛠️ Technical Architecture
 
-Built with a "Performance First" mindset, CampusFind utilizes a cutting-edge stack:
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=react,ts,threejs,supabase,tailwind,vite" />
+</div>
+
+<br />
 
 - **Frontend:** React 19 + Vite (for ultra-fast HMR)
 - **Styling:** Tailwind CSS 4.0 + Framer Motion (for physics-based animations)
@@ -40,6 +63,9 @@ Built with a "Performance First" mindset, CampusFind utilizes a cutting-edge sta
 - **Icons:** Lucide React for consistent, crisp vector visuals
 
 ## 🚀 Quick Start
+
+<details>
+<summary><b>View Installation Steps</b></summary>
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/) (Latest LTS)
@@ -71,6 +97,8 @@ Built with a "Performance First" mindset, CampusFind utilizes a cutting-edge sta
    ```
    *The portal will be live at `http://localhost:3000`*
 
+</details>
+
 ## 📁 Project Structure
 
 ```text
@@ -87,13 +115,17 @@ src/
 
 ## 🔐 Security & Safety
 
-- **Protected Handshakes:** Item claims are handled through verified student profiles.
-- **Data Integrity:** Supabase Row Level Security (RLS) ensures only authorized users can modify listings.
-- **System Broadcasts:** Automated notifications keep the community informed of high-value recoveries.
+- **🛡️ Protected Handshakes:** Item claims are handled through verified student profiles.
+- **💾 Data Integrity:** Supabase Row Level Security (RLS) ensures only authorized users can modify listings.
+- **📡 System Broadcasts:** Automated notifications keep the community informed of high-value recoveries.
 
 ---
 
 <div align="center">
   <p>Built with ❤️ for the students of <b>Dayananda Sagar College of Engineering</b></p>
   <p><i>"Bringing your belongings back home, one beacon at a time."</i></p>
+  
+  <br />
+  
+  <img src="https://capsule-render.vercel.app/render?type=waving&color=auto&height=100&section=footer" width="100%" />
 </div>

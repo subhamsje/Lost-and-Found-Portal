@@ -1,0 +1,89 @@
+<svg fill="none" viewBox="0 0 800 300" width="800" height="300" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulse {
+          0%, 100% { opacity: 0.5; transform: scale(1); }
+          50% { opacity: 1; transform: scale(1.05); }
+        }
+        @keyframes typing {
+          from { width: 0 }
+          to { width: 100% }
+        }
+        @keyframes blink {
+          50% { border-color: transparent }
+        }
+        
+        .container {
+          font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+          background: linear-gradient(135deg, #0B0F19 0%, #1E293B 100%);
+          width: 800px;
+          height: 300px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          border-radius: 20px;
+          overflow: hidden;
+          position: relative;
+        }
+        
+        .glow {
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          background: #3B82F6;
+          filter: blur(80px);
+          border-radius: 50%;
+          opacity: 0.3;
+          animation: pulse 4s infinite ease-in-out;
+        }
+        
+        .title {
+          font-size: 48px;
+          font-weight: 900;
+          margin-bottom: 10px;
+          letter-spacing: -2px;
+          animation: fadeIn 1s ease-out forwards;
+        }
+        
+        .subtitle {
+          font-size: 18px;
+          color: #94A3B8;
+          font-weight: 500;
+          overflow: hidden;
+          white-space: nowrap;
+          border-right: 3px solid #3B82F6;
+          width: 0;
+          animation: 
+            typing 3.5s steps(40, end) forwards,
+            blink .75s step-end infinite;
+        }
+        
+        .badge {
+          margin-top: 20px;
+          padding: 5px 15px;
+          background: rgba(59, 130, 246, 0.1);
+          border: 1px solid rgba(59, 130, 246, 0.3);
+          border-radius: 50px;
+          font-size: 12px;
+          font-weight: bold;
+          color: #60A5FA;
+          animation: fadeIn 1s ease-out 0.5s both;
+        }
+      </style>
+      <div class="container">
+        <div class="glow" style="top: -50px; left: -50px;"></div>
+        <div class="glow" style="bottom: -50px; right: -50px; background: #8B5CF6;"></div>
+        <div class="title">CAMPUSFIND @ DSCE</div>
+        <div class="subtitle">Bringing your belongings back home, one beacon at a time.</div>
+        <div class="badge">LIVE ON CAMPUS</div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
