@@ -1,0 +1,8 @@
+{
+  "name": "Campus Find Portal",
+  "description": "An award-winning, premium Awwwards-inspired Lost & Found Campus Portal with glassmorphic cards, interactive dashboards, and live statistical analytics.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
